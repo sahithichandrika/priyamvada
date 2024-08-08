@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Priyamvada</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Health Care Medical Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Novena HTML Template v1.0">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="novena" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="C:\Users\mouni\Downloads\logo.ico" />
+
+  <!-- 
+  Essential stylesheets
+  =====================================-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/slick-theme.css') }}">
+
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+  <!-- Smartsupp Live Chat script -->
+  <script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = '97e4675a16554c6f1d4b142284ff584d7828a47c';
+    window.smartsupp || (function (d) {
+      var s, c, o = smartsupp = function () { o.push(arguments) }; o = [];
+      s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+      c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+      c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+    })(document);
+  </script>
+  <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
+
+</head>
+
+<body id="top">
+
+  <header>
+    <div class="header-top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <ul class="top-bar-info list-inline-item pl-0 mb-0">
+              <li class="list-inline-item"><a href="mailto:support@gmail.com"><i
+                    class="icofont-support-faq mr-2"></i>priyamvada.com</a></li>
+              <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>India</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+              <a href="tel:+23-345-67890">
+                <span>Call Now : </span>
+                <span class="h4">6302073733</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navigation" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/index">
+          <img src="static\images\about\priyamvada_logo.avif" alt="" class="logo_css">
+        </a>
+
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+          aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icofont-navigation-menu"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarmain">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="/index">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/service" id="dropdown03" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Services <i class="icofont-thin-down"></i></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                <li><a class="dropdown-item" href="/problem">Problem Detection</a></li>
+                <li><a class="dropdown-item" href="doctor-single.html">Tips</a></li>
+                <li><a class="dropdown-item" href="/appointment">Appoinment</a></li>
+
+                <li class="dropdown dropdown-submenu dropleft">
+                  <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdown0501">
+                    <li><a class="dropdown-item" href="/index">Submenu 01</a></li>
+                    <li><a class="dropdown-item" href="/index">Submenu 02</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/department" id="dropdown02" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Considerations<i class="icofont-thin-down"></i></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                <li><a class="dropdown-item" href="/breast">Breast Cancer</a></li>
+                <li><a class="dropdown-item" href="/pcos">PCOS</a></li>
+                <li><a class="dropdown-item" href="/Menstrual"> Menstrual Cycle </a></li>
+                <li><a class="dropdown-item" href="/Thyroid">Thyroid </a></li>
+                <li><a class="dropdown-item" href="/heart">Heart Disease</a></li>
+                <li><a class="dropdown-item" href="/bp">Blood Pressure </a></li>
+                <li><a class="dropdown-item" href="/diabetes">Diabetes</a></li>
+                <li><a class="dropdown-item" href="/Cystitis">Cystitis </a></li>
+                <li><a class="dropdown-item" href="/HPV">HPV </a></li>
+                <li><a class="dropdown-item" href="/Osteoporosis">Osteoporosis </a></li>
+                <li><a class="dropdown-item" href="Maternal.html">Maternal </a></li>
+                <li><a class="dropdown-item" href="/Mental">Mental Stability </a></li>
+            </li>
+
+          </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+          <li class="nav-item"><a class="nav-link" href="login/login.php">Login</a></li>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-title bg-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+            <!--<span class="text-white">Issues Index</span>-->
+            <h1 class="text-capitalize mb-5 text-lg">Issues Index</h1>
+
+            <!-- <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="/index" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">All Department</a></li>
+          </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section service-2">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+          <div class="section-title">
+            <h2>Embracing Women's Health with Love and Expertise</h2>
+            <div class="divider mx-auto my-4"></div>
+            <p>"Embracing Women's Health with Love and Expertise" signifies our commitment to providing exceptional
+              healthcare services tailored for women. Our approach combines professional medical expertise with the
+              nurturing care of a mother, ensuring that every woman receives compassionate and personalized attention
+              for her health and well-being.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="department-block">
+                  <img src="https://videohive.img.customer.envatousercontent.com/video-previews/22432553-26b1-4536-bea8-7e7a46ce7c1a/zShuHh6Sp2vY5gPTTvMi_Mda5epQBQ9aPRwP25Nbg_thumbnail0.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=bad5a08276be16fcb929d112de720b55" alt="" class="img-fluid">
+                  <div class="content">
+                    <h4 class="mt-4 mb-2 title-color">Breast Cancer</h4>
+                    <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                    <a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-4">
+                <div class="department-block">
+                  <img src="https://cdn.shopify.com/s/files/1/0572/8082/3454/files/Avni_blog_Images_Revamped_-_2022-09-01T164952.978_1024x1024.png?v=1662031233" alt="" class="img-fluid">
+                  <div class="content">
+                    <h4 class="mt-4 mb-2 title-color">Cardiology</h4>
+                    <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                    <a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-4">
+                <div class="department-block">
+                  <img src="https://media.istockphoto.com/id/1388637689/vector/female-raise-her-hand-to-hold-her-chest-concept-of-heart-attack-heartache-chest-pain-danger.jpg?s=612x612&w=0&k=20&c=BXPpvQ29uN654S1BsLKZktbtNwHwFGDqVq6uTfc9Uyo=" alt="" class="img-fluid">
+                  <div class="content">
+                    <h4 class="mt-4 mb-2 title-color">Dental Care</h4>
+                    <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                    <a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="department-block">
+                  <img src="images/service/service-4.jpg" alt="" class="img-fluid">
+                  <div class="content">
+                    <h4 class="mt-4 mb-2 title-color">Child Care</h4>
+                    <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                    <a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-4">
+                <div class="department-block">
+                  <img src="images/service/service-6.jpg" alt="" class="img-fluid">
+                  <div class="content">
+                    <h4 class="mt-4 mb-2 title-color">Pulmology</h4>
+                    <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                    <a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-4">
+                <div class="department-block">
+                  <img src="images/service/service-8.jpg" alt="" class="img-fluid">
+                  <div class="content">
+                    <h4 class="mt-4 mb-2 title-color">Gynecology</h4>
+                    <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                    <a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>-->
+  </section>
+  <section class="section service-2">
+    <div class="container">
+      <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="data:image/png;base64,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"
+              class="img-fluid" alt="Breast Cancer">
+            <a href="/breast" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0572/8082/3454/files/Avni_blog_Images_Revamped_-_2022-09-01T164952.978_1024x1024.png?v=1662031233"
+              class="img-fluid" alt="Cardiology">
+            <a href="/pcos" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://us.123rf.com/450wm/yevgenkolnobritskaya/yevgenkolnobritskaya2301/yevgenkolnobritskaya230100050/197429263-girl-with-menstrual-pains-women-menstruating-health-cycle-cramps-period-menstruation-concept-flat.jpg?ver=6"
+              class="img-fluid" alt="Cardiology">
+            <a href="/Menstrual" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img src="https://mentalcureit.com/wp-content/uploads/2021/08/shutterstock_508392580-min.webp"
+              class="img-fluid" alt="Cardiology">
+            <a href="/Thyroid" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/1388637689/vector/female-raise-her-hand-to-hold-her-chest-concept-of-heart-attack-heartache-chest-pain-danger.jpg?s=612x612&w=0&k=20&c=BXPpvQ29uN654S1BsLKZktbtNwHwFGDqVq6uTfc9Uyo="
+              class="img-fluid" alt="Dental Care">
+            <a href="/heart" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://png.pngtree.com/png-vector/20220519/ourmid/pngtree-a-woman-measures-her-blood-pressure-with-a-blood-pressure-monitor-png-image_4671610.png"
+              class="img-fluid" alt="Dental Care">
+            <a href="/bp" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/1330228954/vector/blood-glucose-test-hands-hold-glucometer-and-measures-sugar-level-by-finger-stick-diabetes.jpg?s=612x612&w=0&k=20&c=K6Hs8K-MFjBVl50BqXX_uWwa_2gP_d1Y-cGCq75rq5g="
+              class="img-fluid" alt="Child Care">
+            <a href="/diabetes" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/1313999296/vector/a-girl-with-bladder-disease-cystitis-urethritis-incontinence-or-other-problems-of-the-urethra.jpg?s=612x612&w=0&k=20&c=w-rOQ-H4O56uBgDxxdiVsbviRYZUQ4YZ0LQx8HyJ0Mc="
+              class="img-fluid" alt="Pulmology">
+            <a href="/Cystitis" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.miracare.com/wp-content/uploads/2020/12/HPV-and-Pregnancy-How-Does-It-Affect-My-Chances-to-Conceive.jpg"
+              class="img-fluid" alt="Gynecology">
+            <a href="/HPV" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/1226829707/vector/girl-with-back-pain.jpg?s=612x612&w=0&k=20&c=8MI4IbFQHyIFOeDVIKPQGxx85You19F311MVHMYqYvU="
+              class="img-fluid" alt="Carousel Image">
+            <a href="/Osteoporosis" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/005/842/609/non_2x/mother-is-looking-down-at-the-baby-in-her-arms-vector.jpg"
+              class="img-fluid" alt="Carousel Image">
+            <a href="Maternal.html" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+          <div class="carousel-item">
+            <img src="https://tse2.mm.bing.net/th?id=OIG1.EYObPyFK33f7WQBj75_4&pid=ImgGn" class="img-fluid"
+              alt="Carousel Image">
+            <a href="/Mental" class="learn-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer Start -->
+  <footer class="footer section gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mr-auto col-sm-6">
+          <div class="widget mb-5 mb-lg-0">
+            <div class="logo mb-4">
+              <img src="static\images\about\priyamvada_logo.avif" alt="" class="logo_css">
+            </div>
+            <p>Receive personalized guidance from top doctors based on your specific health concerns.</p>
+            </p>
+
+            <ul class="list-inline footer-socials mt-4">
+              <li class="list-inline-item">
+                <a href=""><i class="icofont-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href=""><i class="icofont-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="widget mb-5 mb-lg-0">
+            <h4 class="text-capitalize mb-3">Considerations</h4>
+            <div class="divider mb-4"></div>
+
+            <ul class="list-unstyled footer-menu lh-35">
+              <li><a class="dropdown-item" href="/breast">Breast Cancer</a></li>
+              <li><a class="dropdown-item" href="/pcos">PCOS</a></li>
+              <li><a class="dropdown-item" href="/Menstrual"> Menstrual Cycle </a></li>
+              <li><a class="dropdown-item" href="/Thyroid">Thyroid </a></li>
+              <li><a class="dropdown-item" href="/heart">Heart Disease</a></li>
+              <li><a class="dropdown-item" href="/bp">Blood Pressure </a></li>
+              <li><a class="dropdown-item" href="/diabetes">Diabetes</a></li>
+              <li><a class="dropdown-item" href="/Cystitis">Cystitis </a></li>
+              <li><a class="dropdown-item" href="/HPV">HPV </a></li>
+              <li><a class="dropdown-item" href="/Osteoporosis">Osteoporosis </a></li>
+              <li><a class="dropdown-item" href="Maternal.html">Maternal </a></li>
+              <li><a class="dropdown-item" href="/Mental">Mental Stability </a></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="widget mb-5 mb-lg-0">
+            <h4 class="text-capitalize mb-3">Support</h4>
+            <div class="divider mb-4"></div>
+
+            <ul class="list-unstyled footer-menu lh-35">
+              <li><a href="#!">Terms & Conditions</a></li>
+              <li><a href="#!">Privacy Policy</a></li>
+              <li><a href="#!">Company Support </a></li>
+              <li><a href="#!">FAQuestions</a></li>
+              <li><a href="#!">Company Licence</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="widget widget-contact mb-5 mb-lg-0">
+            <h4 class="text-capitalize mb-3">Get in Touch</h4>
+            <div class="divider mb-4"></div>
+
+            <div class="footer-contact-block mb-4">
+              <div class="icon d-flex align-items-center">
+                <i class="icofont-email mr-3"></i>
+                <span class="h6 mb-0">Support Available for 24/7</span>
+              </div>
+              <h4 class="mt-2"><a href="mailto:support@email.com">Support@email.com</a></h4>
+            </div>
+
+            <div class="footer-contact-block">
+              <div class="icon d-flex align-items-center">
+                <i class="icofont-support mr-3"></i>
+                <span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+              </div>
+              <h4 class="mt-2"><a href="tel:+23-345-67890">6302073733</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-btm py-4 mt-5">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-6">
+            <div class="copyright">
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="subscribe-form text-lg-right mt-5 mt-lg-0">
+              <form action="#" class="subscribe">
+                <input type="text" class="form-control" placeholder="Your Email address" required>
+                <button type="submit" class="btn btn-main-2 btn-round-full">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <a class="backtop scroll-top-to" href="#top">
+              <i class="icofont-long-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- 
+Essential Scripts
+=====================================-->
+  <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/shuffle.min.js') }}"></script>
+
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA"></script>
+  <script src="{{ url_for('static', filename='js/gmap.js') }}"></script>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+
+</html>

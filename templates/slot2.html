@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a5dbf6;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 10px;
+            color: #007BFF;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Book an Appointment</h1>
+    <form id="appointmentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required><br>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="message"></div>
+
+    <h2>Appointments</h2>
+    <ul id="appointmentList"></ul>
+
+    <script>
+        let bookedAppointments = JSON.parse(localStorage.getItem('bookedAppointments')) || [];
+
+        // Get the form element
+        const form = document.getElementById("appointmentForm");
+
+        // Get the message div element
+        const messageDiv = document.getElementById("message");
+
+        // Get the appointments list element
+        const appointmentList = document.getElementById("appointmentList");
+
+        // Function to display all appointments
+        function displayAppointments() {
+            appointmentList.innerHTML = '';
+            bookedAppointments.forEach(appointment => {
+                const li = document.createElement('li');
+                li.textContent = `Name: ${appointment.name}, Date: ${appointment.date}, Time: ${appointment.time}`;
+                appointmentList.appendChild(li);
+            });
+        }
+
+        // Display existing appointments on page load
+        displayAppointments();
+
+        // Add a submit event listener to the form
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Get the input values
+            const name = document.getElementById("name").value;
+            const date = document.getElementById("date").value;
+            const time = document.getElementById("time").value;
+
+            // Check if the appointment time is already booked
+            const isAlreadyBooked = bookedAppointments.some(appointment => {
+                return appointment.date === date && appointment.time === time;
+            });
+
+            if (isAlreadyBooked) {
+                messageDiv.innerHTML = "This appointment slot is already booked. Please choose another time.";
+            } else {
+                // If not booked, add the appointment to the bookedAppointments array
+                bookedAppointments.push({ name, date, time });
+
+                // Save to local storage
+                localStorage.setItem('bookedAppointments', JSON.stringify(bookedAppointments));
+
+                // Display all appointments
+                displayAppointments();
+
+                messageDiv.innerHTML = `Appointment booked for ${name} on ${date} at ${time}.`;
+
+                // Clear the form
+                form.reset();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Priyamvada</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Health Care Medical Html5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Themefisher">
+    <meta name="generator" content="Themefisher Novena HTML Template v1.0">
+
+    <!-- theme meta -->
+    <meta name="theme-name" content="novena" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="C:\Users\mouni\Downloads\logo.ico" />
+
+    <!-- 
+  Essential stylesheets
+  =====================================-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick-theme.css') }}">
+
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '97e4675a16554c6f1d4b142284ff584d7828a47c';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o.push(arguments) }; o = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+    <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
+
+</head>
+
+<body id="top">
+
+    <header>
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <ul class="top-bar-info list-inline-item pl-0 mb-0">
+                            <li class="list-inline-item"><a href="mailto:support@gmail.com"><i
+                                        class="icofont-support-faq mr-2"></i>priyamvada.com</a></li>
+                            <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>India</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+                            <a href="tel:+23-345-67890">
+                                <span>Call Now : </span>
+                                <span class="h4">6302073733</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navigation" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/index">
+                    <img src="static\images\about\priyamvada_logo.avif" alt="" class="logo_css">
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icofont-navigation-menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarmain">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="/index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/service" id="dropdown03"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <i
+                                    class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item" href="/problem">Problem Detection</a></li>
+                                <li><a class="dropdown-item" href="doctor-single.html">Tips</a></li>
+                                <li><a class="dropdown-item" href="/appointment">Appoinment</a></li>
+
+                                <li class="dropdown dropdown-submenu dropleft">
+                                    <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown0501">
+                                        <li><a class="dropdown-item" href="/index">Submenu 01</a></li>
+                                        <li><a class="dropdown-item" href="/index">Submenu 02</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/department" id="dropdown02"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Considerations<i
+                                    class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                                <li><a class="dropdown-item" href="/breast">Breast Cancer</a></li>
+                                <li><a class="dropdown-item" href="/pcos">PCOS</a></li>
+                                <li><a class="dropdown-item" href="/Menstrual"> Menstrual Cycle </a></li>
+                                <li><a class="dropdown-item" href="/Thyroid">Thyroid </a></li>
+                                <li><a class="dropdown-item" href="/heart">Heart Disease</a></li>
+                                <li><a class="dropdown-item" href="/bp">Blood Pressure </a></li>
+                                <li><a class="dropdown-item" href="/diabetes">Diabetes</a></li>
+                                <li><a class="dropdown-item" href="/Cystitis">Cystitis </a></li>
+                                <li><a class="dropdown-item" href="/HPV">HPV </a></li>
+                                <li><a class="dropdown-item" href="/Osteoporosis">Osteoporosis </a></li>
+                                <li><a class="dropdown-item" href="Maternal.html">Maternal </a></li>
+                                <li><a class="dropdown-item" href="/Mental">Mental Stability </a></li>
+                        </li>
+                    </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                    <li class="nav-item"><a class="nav-link" href="login/login.php">Login</a></li>
+
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Breast Cancer Hospitals in Andhra Pradesh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #000;
+            overflow-x: hidden;
+            background: #f8f9fa url('logo.png') no-repeat center center fixed;
+            background-size: 200px 200px;
+            /* Adjust size as needed */
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hospital-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hospital-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hospital-card img {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .text-center {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">Top Breast Cancer Hospitals in Andhra Pradesh</h1>
+            <div class="row">
+                <div class="col-md-4 hospital-card">
+                    <div class="card">
+                        <img src="https://icco.co.in/wp-content/uploads/2019/02/2-1030x579.jpg" class="card-img-top"
+                            alt="Apollo Hospitals">
+                        <!--<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIVFRUWFRUVFxUVFRYYFRUVFRUWFhUVGBUYHiggGBolGxUVITIhJikrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy8lHyUtLS0vLS0tLS0tLS0tLS0tLTUvLS0tLS0tLS0tLS0tLS0tLS0tLSstLy0tLS0tLS0tK//AABEIAMcA/QMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAQIEBQYAB//EAEcQAAIBAgQDBQMJBAgFBQEAAAECEQADBBIhMQVBUQYTImFxMoGRFCNCUqGxwdHwYnKSwhUzQ1OCk6LhRFSy0vEWRVWD0wf/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QALREAAgIBAwQBAgYCAwAAAAAAAAECEQMSITEEE0FRYRQyInGxwdHwgYIFQlL/2gAMAwEAAhEDEQA/APRleio9D0FdnAr02jx4uvJKDUueoTXa7vqWgrvIks1DY0xLlFAoqh6tQyaSaIyU3IadiaYylAp4SnZJpWCicooyrQhbp6jzqWaR2DhKXLQ1PnTiRWZraHCloealmigsIKUCmA12elRVhQorsooXeVwuilTHqQWK6aYGrs1FDtBIpQKFnpZpUFhqcBQlaig1LKQ4UtNmmFjSodhC1MZ6GTSCnQrOZjTCaIaGatEMztq8Y3oguVX2LwqSjTXoyhR4sWyT3lKHHSmIKKLVZukapSZwujpT0v03ua7LU7Mpa0SRdpC9CFcKmjbWwytTwaACadFJopSCl6YGphpJoSByDZ6XPQJp2ajSGoLnpM9NR6c1Kh2dnp0nrUfNXZzT0i1ktRTwBUNbho6NUOJpGaZIBHSlmuUU4JWZskxlKFogWnBaVj0gwtGRa4URalstISKawolIRU2MCaaWorJQytUmSwRuUzNRStMIrRUZuzDoIqbZxEb0Hu6UWq9eVM8ONx4Jq4qjW8XVcFriKxeNGyyyRajFA1xuTVWtHVqh40uC1lvkmBqIs1ERqkW2qGjSO4UN50q3KCbU09MM1Q6LVhwJpDbNctsilzVFl0RbrxQDi4ouMQ71WutdOOKaOXJJx4JYxtETHVW92aXUVo8cTFZZIuLeKBo4YVSWwamWrvKsZ464OiGW+SfIp6VDD0VL0Vk4s2UkT0Y0RXNRExdGXECsWn6N4yXskh6cHoKODRJFQ6NUwganTUY4iK4YsdaWlj1olBqdNRRiR1pwxApaWNTRJpjLTBeru8paWVaFyUmQUheuzU9xbGWNiuFmpGI9r0A/P8aaK6nnmmckemg1uDFj9TThhaIDSg0vqJD+liDODNCuWgNzUwOeppjIp3FVHqPZEul/8kVLfQ1LsgjlSLZXzo1vTanLNFkx6eaD2mPSjSaAtyiC9WDaN1FoRmNBdqe7TzoTGtI0ZTtDC5qNftg8vhRyw6ihu45VtHYwlT5IZU00+lSormt+VbajDQQw1LmoV7iFgObZvWg43U3FDD3EzR0AOxB9DNNTi+GEsc48oQXTTxfNcLVLkFN0Sr9j0umptp5qvAo9qspxVG2ObTLAPXG6aDbJosGudxR0qTZHuMSaVbTU5lNEQVV0tiUre40I1IWI50VlqNcIHOhbhLYOl40VcV51WMxpVFU8aJWVlwmJHWid9VQpo63KzeJGyzMBifaPr92lV/Gcd3Fi5eie7QtHWOXv2qdcMknzP31C4tgRftNaYwrCGjeOgkGuc66KbB9qC+JGGNkSWZc4bQFUZ2kR+yRWmFZ7h/ZhbWJOJ7xmYtcYqYgG7mmCANsxitC0wYGsaetD+BlIe1mGBAZnUtmA8BM5bj2j7M/TRh7qvdhry+OlYW92Pvm5ZYNbKoVzSWDEfKLl5yoCsD/WGASNuVbjEE5GjU5TAHWKHQgFriNliAt62SYgZhJB2IB3nlUv3153wvs/iExWGL2jktrh1L5kIBtWEDc83tqRtWh7bK5VMgc5VxLHIGJ1wt5U9n9thA6xRQWacA0+sf8A/wA2D9xdNzPPfEDPmnKLVogDNrEsftrYChjOFOrL9sOOXcOQLRA+Ze5qARmW/hrY38rzfZ0qf2R4lcxOFS9djMzXAcogQlx0GnotFPkLLcihtYHT8KNSRRbQnFPkF8nH6/3pDbqqxfamxbud0+cN3htCFkZwLZiRy+dTXzPSrqKrXL2T2oejxLthbU8Suq5yobtsM31VK28zbHYEnY7Vocd2MsCy12xibQVFuMt1HDd53YWV7wsizLAEgDYQDrSdrezGIfGPiE7mCyOqteFtvCFAJmI1U6g8qiYjhOOIl8HccRErdtXpBI1GYMdvOvJlCWqTa8n1GPNB48ahNKkrVr16ZL4d2bxbYSzet4u+l65kcoXPdLYuXBbVzBmQCtwzplnpUizZxxa4uHx3e9zcu2bgvYdUIuW7dy4IHilWFpwDIMxI1qgcXUJZ8LiLZgrm+TFfCRDKWtG34eXoeeskTtQwZAcS4NvVc5v+0VNskq3eCcjMNRpy6U1llHy1/lin06yW9MZf6p/syf2V7YYjEYm1ZuC2VfNJCkNojMI8Ubgcq9HtpXi3YZox+G5/ORpzlWX8a9zyDoK7+j6mTg9Tvc8X/mOhxwzLtpRVcL82Cy04ORTmtj9E1RYvi1xLjLCEBo1BGkTuD+FdkZqR5EsThvZejWi21qhs9owPbs/wOCefJlHTrVnh+0uHI8QuJ6pm/wCgtUybXgcIp+STdSozWamJxfCt/boJ2znIT/HFS+6QgEEEHUEGQfMEVMctFSw2U4tU8WTU9rQpuUVr3TLtETuaXJUgiky0tQaDPXeMWUkO+TLIOZXERvJIp1vi9g7XrZ/xD8af2w4WtxAdnMgkc1jY+YkQayD8NI5D4VxSm4uj0YJSVm0TF2ztcQ/41/OpCsDtr6V58cB+yPhSfIvL7TU91+iu2eiAU4V55btONmcejGifKMQNr13+Mn76fe+A7Z6ADXRWCHFMUNrze8KfvFPudocUCuVgRBzB7YOukQRHn8KO7EWhm8UUtYi32oxQ3W0f8LD7jUhO1t7nZtn0LD75p92IaGaXGcMtXv622r6ZfEAdMwaNeWZVPqBRcDgksoLdpQiAkhQIAzEsYHmST76zSdsT9LDn3XB+IqQnbG3zs3B6ZT+Ip9yPsWlmlBp1Z632uw5IBF0E6ap+RqQO02FmDdgjkUf7wIqtS9i0sreK9kTdurdF3LF43SuTNObupUHMI0tDXXf3Vqqrk45hjtfT3mPvipNviFltr1s+lxPzp2goznbbg17Ef1SBvAqwWAki7nPtabedXnZ7DtbwuHtuMrJZtIw0MMltVYSNDBB20qcrA7EH0M/dTsp6UCFFUva7FNbshlInMw8Sqw0s3WGjA/SVfhVzNNdQdxNAGZ7HWbWIsW8Tcs2O9DvDpaRSCrsoIKjQwB760GPxHdW3uRORS0bSBv8AZRLNpVEKoUdAIHwFJibKujIwlWBUjqDoR8KVLwNyb5ZXcA40MUtwi2U7u4bZBIMkAEkRy1+yqbi0NdYjTUc42AB2q/4Zwu3h8/dggO2dgST4juRJ09KpOJj5w+p5H6xFbYvuMM/2lf3Z6nf9b0oB68zy9aewHluPLpXZeh59a6LOMYpIj8/StVwY/Mp5CPgY/CsxlP2np51Pv4m6mCZrTEOrPECfrxoZnUqfdWWXg6On+5mnDnqfjXd43X7B+FVnZzFtew1m45l3QFjAHi56DQa1Yk1gdNJj/lHUD4x+dO+UDofdBqnfiyi/3BRph2DCMpyKjEbzJFxaXhnEreJVmtzCsUOZYOYAEx1Go1oticIk/jY9keTH7vyrG9obht93lMSzz5qlq5cI/wBFbLjXtgdFH3mqfE4NH9tQ241AOjCG36gkehqGrLjsjJdk7928bnetIUJGijU582wHQVoWwoqRheH27U92ipO+UQDUgpScR6jBYzjz22ACK0tcXmPYuvaHxKGtUcJQLvZTDsysc8qSR4zubjXSSDvLux98Vc93Q4IeoxXEuNrZZ1a2TlYroRrCK+x8nAq9tYMMAYiRUbiXY9LxYm66lmZjGWJZUXmOQtj4mtClqBFJwQKTKdsAByqot8Qw7OqBjmb2RlbXUrvEbqefKte9rQxWVwvZK4l+1dzoVtwCIIY+1JHLdp3pdtD1MnHhoqLfs20MM6qf2iBvtvWo7qst2p4JevMxtJmGW2vtAeyzs2581+3pS0INY4cNVgCNRuCD9oIpo4aORn3z8auuC4Iph7SMsMttFYaaEKARI0OtZninCrxxNp1tMUF0MzCIVe/mTrPsgGjtoesmNwyhNwqeQ+FaDjNhu4u5Ac3dvlyzmzZDlyxrMxEVQdnEuHF4kP3uQNdyB8+WO+OXIG0jLtHKKXbDWCPCvKkOEuj2Ljqf2Xcfca1hwwrJ8T4jct4lbQYBTeyQQPZyYZvjN1viOlGhhqRKXF4kRF66PW4zT/FNGXjGLH9qT+8iH8KidoOIPYcBMsEgeIE6EeRFXfELIt23cCcoJjrAoqQWiIvaPFDfu29UI/6SKe/bC8olrNs+jOv3zUfgt/5QboKBe7fLoZnU67CNqhcbxiWnW0yMS7i2CIgFzbAJk7TdG31TT/Eg/CXy9rzpmw51+rcn70FJi72c58sSM0EgkSxaPgRSYfBA2kMfrMaJjEIPLYD/AELW+FvVuc/UVoIk+R5dPwNIwHTmOR8vKiuN/Tr601uen61rps4QeUeW/pV7wAjIw3h/XdVNUx9Dy6eXn5VacCfVx+6fjI/lqJ7o2w/cXIFdNV39MWu/GHJIumYGUwQFze1ttrU8msDrIjcPTvRe1ziY1MeJVVvDsZCr8BQuE8KTDhhbJhmzEMZgwBp8BvR8Ljrd2e7uK+XRsrA5SdgehozOBuQPWmAvF2m63llH+kH8ahmjY5puP+8R8NPwrN8U4y9u6bahfYzAmTrntoQQIkTcXnzqVsg5ZeV0VD4Pimu2g7gAksIAIGjEDcnkBU2mAkUoFKKicTxvchTlnM6rEx7U6+6gCYBXCqngXGvlIBFsoCgfVgTBLAAwP2TU3H40WgGIJlgum8n1oAlV1QeG8VW8zKqupVUY5suzlwsZSdfm2+yp9AHV0VDxfFbdpgjk5iJ0UnSY5VJwmIW4odZg7SCNvI0AEApFaSRrpHLTXoedPFMuXAoLMQABJJ2AHM0UApWhlhOXnEx5CAT9opLWNtscqurHXQEE6b6VR9sOIvYFooxGYvMGJjLH30BZfxQbuHtnVlXTWWA085O1YIdq7/1z/o/FKeO1V5vCWmdNVtka/wCCgVm3xHDrVz27aN+8oaD5TtRbthWBVhIIgg8wd5rL9o+0d2xiGtqUygKRmWTqoJ1BHOoVvtpe5raP+Fx/PSodmuwfDLVosbaZS5ltWMnXXU6bnbrUPinAbV5ld82ZGV1ho8SlSJHMSi1QWu2jjTure5Ohcbkk7k8yaFjO3ZCkdwpkHa86nbkQhg+dDGbXDW/m1HT86i8SXxe7+VR+FTMA0oJ31qNxNfF/hH2lvyqocmeX7WQCD9nT1pGn7KcF21O35daaBtqdvLy8vOt7OM4k+W351YcGPjb91fsLfnVf7+XlUzhrfOeqt96VMuDTH9yCXeChsUmKzkFS3hgQQ1sW99xET7zVuDQ81VPG+PW8OEzGc7AjKRqqsM0a66ToPPpWTpLc6hOz/CGw7XSWDC5kIgEFciZTMnWd6trkc6gYHi9q8jOjggSSCQMoA+kZgDQmSadg+JK6ZmEHMyldyrKYIbodtPOi00MNeaWY9WJ+JqoxvArd1y7FsxXLIJ0XOlyADIHitJrE6VZA06igsDgcMLaBASQNp399SaaKWadCHVB4rw/vgozZcrB9pkjYelTZrgaKAquz/Bfky5c+cBQoOWDCsxHM/X+ypPFMEboUAgZWza84BA++p0100aQsrOD8Na09xmIOcIBAiAmfTfX2zVpSTSzRpCyh4vwy7cvB1AyhMup1mQdvj/vVtwy0UthWEET99SJpM1GkLCCofE0LWnVRJKsAPMjTWn3sUEBJkwCYG5ivMeJ9pbl66bhxF3DplhFTvdYJ1NtWXLuRmIkx7gm0gSbNxwnCOl3MywIImRzIP4VC7eYK7dFnurbPlNycusTkj7j8Kx39PPy4nf8AemJ/7jTh2muD/wBzf32sSf5DU6kVpYxuCYof8Pd/gJ+6ltcMxAImxe/yn/KnHtTeG3Et+tm/+Nk0+32qxJ24ih9bVwffhqLQaWWXbnBXXxbMlq4ylE8So7LIEESBE1n/AJBeH9jd/wAt/wAqsG7WYoaHiFn3oRpt/wAtXDtniv8A5DCn1A/HD0Wg0srDhro3t3B6o35VX8RDAGQRodwRWmHbbEj/AI3Bn+H/APIU4duMT/zeD/iWPuFDaDSz0fhvse+fiBUfikZxMeyu/wC89YO12zxXK9giP3l/7hSf+qcbdbwnCOYjKhzHmdluTO/woUkiZxbTRscg0+H3VUYXi6XLtu0gbxW7jScykFHCgQeuVz7h1qk4txi8mHdcSttXuL80LQdWUIR3neFj4dCsZdd9jWQwvG7tkZkaGCXACdYFwgnQg6yA066iqeSjCOI9fS0dNG2jn5VIwlsqyEncERrzE/y1FwhDqpGUsIzEoFAJUnmTzDA+Y8xLrV3x2xp7caR9RxpG9EcinwPtuDVhO0OKa2M4Zh4RADMBmzwCQp10J+Fed4q8uV2YtOeUYAEGIDZiT7OqESNGBGkmr/t1xc5mw8KMuW4HMEghTIy8xLR13rDm6GGgGYnMAskAls2U7kwWP6JNcuaf4jdcFvwPjjYcsFLgMIygLmBFtwpzEHaCY29daE2Puj+qd1GnhDEAQABtz/2qFw5gJGhUZpYmSzf7+X/m1UqAJHKoinLYbPUgaeDUM4gCQZkdAee2vKfOn2MSHmDsY01+0aV3JoRJmlmqDjHaJLDKPa1k5YOg0IGumpXX1qxwHEFvWhdScpmJBB09d/Ws4Z4Sk4p7oHFpWTppZrPY3tAoKC3dswzAeIkBVP02fXTyy+/Q1cYXEZ0VuqgkAgwY1GlXDJGTaQmmiVNdNZl+11oX1teyGnxNMNvsRpup1GYGYBkGLjEP3lvNbuso3D28hPpDgj10mnGcZcMTTJ01HxmOt2hmu3FQdWOn61A9SBzFDsYsNoD09JPI+flVZ2jZ2U2/ClkrF246lpVyQVAXWAoZieUCdKcnStAluWGC4vaumEYTGYAlZZeTZQcwBEESBIIPMVKdqyPZzg/cXA1q8r2rkMue1mJ8EkC7MK4DNp0zaaEC147xtLGVZQuzL4S0FUJ8TmNRpt1qFOo3IGtyZjLuleYcde2LtwZWnvHBiDOp2FWPGOOOxZZOWWg7SJ02261TIwukhzJ56wcp+lO+/Pr5xXNkzqzSOxEF5YBjSAZz2h7z46a+JtgzKbbC7ZP89FbB94pjf2TCkTIHiAPXMsetUt7gzFhkZSCQBJMkksIiN5UgxI1GpmhZEzSyz75WAhd+ea0dvR/KnYd0Zgsak9I/GjYVe6W2LiewpEAjqwJmRO46jU0LBKrXlZQVMjwxIJ2JnNI5HY86E2xguMKEKwIkadDB1nQ8jUEg6AG3qP7xJHuirrjBVnC5HcqDK2zBA0JnwsdANdI894LxHs/bkm0ma3JyM1xe8ZZkFstwDNBBIjQmOVNJ8CvazOi2xMAKd9mQ8iZgLOwPwoOKYIY8J9GU69D4Z6VMxvDWsMxDQQxA8aMchiACv0vFG/XkdaPFAhiCSToSSQZJEkyN9aLKNXwewGtAkDYcuop+JlLN0LIzBPZGsBx/3TT+BtFj1FuNvq6/bNVRWMNe/X9unw2qieS47Z44uLALBmFmSZJ9tiytJVdWXKY9Kzdlp89tJ/a2Hn+VTcfj47pLioGtBlJQgjK7FwpVdPDmYATEHbea6xiwBEBvUDQyToSNN+UTS1WZqFG87V8bC2sLhMOAotImdoVRndUaCVYkmQxacvtbRqXdlO0HeOcO6h1uXAwZs2cySGzZiQZUqMukamspxXivexnYuRBLOfFCqEUKRzMSSSxJUaySC/sxeJxFphMLcDbTGYhZPTTSf2aUKiOasvO2jIl91AAEqNAIEqDy6iOmtUAvtOUbCNZEgAzoOmhma9TxrYe7gboOFgNavn5SbAcISXY3CwBYZTI0O4gV5NclCVUTqdZ3iRqJzAajfeoyQrf3uRFprYj3sZ4YBPhIg7nXMWI6TI/RNWOHxpIGdmnQ6Ac96g5sqkESQCABtMgzrIJmDp5UNMLeueNbN1lJMFUdhpuJA60lfguj0jCcdOWb0oCJVirQVBUOZG8DfXnroROwu4kJbzaqAsgZTIAHMb6Tr01ryfFcQlQMtpRbZm8KkZhKmHljm6Aac/decO4itxVtkjvNSwyA7MD4ZaWEEjbr1FaY5vhFyjW7H9p8X3yS+dQYIVtMmg0APsmN15a7Ga0/C8MVwitaUWrgtqZKRLIBo5Cyy8jz06isjj8IjKQFLAHNNtlBynMWMMuqsTObUnKI51HfH2rQK5yHJzQbthgCXknL3Ay7nTN0pYsEsdya2f5EPJGUlFPckccwa4e4RcYjmAgmJAJysVAAnMNtPD1racI4c1rCCyrEhlEMUIKi7H0CvINIHXlXl17GWrtzK8hdDJIUnQfVO2k6eW1S04qCylWVVJyyqWRlbTX2CedKDjFtmjxyaNHxNbdvGDCpbnMoXKQZzMpdcrEAiQQxfXUE6mkTB3TmFq6zXEe6CFMm7cW3HPaWUL4iZBkkTpnb2KtB1uDVirbZQIEofCoy6kMSYnX4ETGJGYJLMoPsIfEW7sbjkADHQz1qVOD3KcJR2LLgfGnyuA7ZguYs090u2U5UggEgbH6IgTVlZ7Th++s3mPduHTMmrBWDKRDgy0MNo5nQbYzFX1tO3sgtljVHABnMQdQNeXlUBsSZk7tqdomRA0H66VSyNJURKFnq/ZTEobDOCQO8uE5lQHQTvlJbwkCd+Q0Aqs7VYayQzsZdmMEEEkq+gnkpSBpzEwZ0y9rGoAQiCIGuUGW3c6CeWnuozKp7vwMNNoM5spUbxGsGpnnuFIO27sj4/CtGZSDImNc0aAA/Ennt51CsLDxI+kIOkyOpMaQo/wDFTHvOxfKSciktAYwFEctgSd/T3n7NW7F26O88c2mPhJBVglwz4ddAF+Nc0ZyauZUcUm6RCxOLYkrvl3IG8c5Ous8+XKoYxV2QSBOpBOUzPOSD0nfnWxRcHaJbxLmgAEsSIgAQ5ImWJJ0/Ot4yVAm0wINyZhORCKRpoIIPTSYrWChXISxuPgqcPfcCZGknUIee8+muk1YYS/8AOKxNstIGqIxmBllyhaPPNImpuLvWWuI4JEFSZywSoaIWIG4G0b1Y4e5bINxFBk+NybY8KKYOUxMaDQDn77TinaZOh+iPheKsM5DZIzXGuAbgsFJAVJZs1zUjmp9adiOOEKSoDeVq24JnYlGXNOonTeo+KxljM47lXAChBClSIMDKNNCAdKdw9bXekm2oQlm+gCii2AQhYwCW5aTJFKWZVszTHgcppe/7wNWxfxBVirpuIa2yM2xG421JzftQATScYu28N80io9+RmJdntWp+iWLZXuczHgWSAW5S+JYwBHBtWzhh4gWFkXnZjmdcou6SSwzKCQI0rCs5HOB1293+1XjmmrO9dKoN2/0LvGY64UGW8xJDDKVsQuWdiqzEgQOh+MXuEe2c1xVFwBoIVRGYHUgaNmH36VUC+YGUk+80nyht9ftrVZY+jCXSN/8AclWuBIfCWXMCRGaDoYO2h/WgqVb7Ka6T8f8AcVVJimE6TPKPa/UD4Vq+EcVuvNu4PnLcb+LwGMniB8W59AANgAHGUWc+bDo4luWF7gWFFtYsKWFu1m0LZmFlA4nXXPmnXrUQYazaVhbIU7gQgaRt0JO3wNTRirn7PwP50rYy6dJ92UEfbNKcNSoxtF1wq5f/AKMux3Rti3ixp3neqoa7nbpmnMy9QV2rzniF7vFCtcJAysAXJWQDHhmB7beknrV/dwisZNu3MzItIDPqFBNQm7N2j/Zt7mf7NanQ9vhUNNGasWmuOtpLbOSDCoGY676KJ0UfjQ1ZVJGZhB0AEx65uda/C9nkQyttz5HPGxHKOpoTdkkOpW5J1Jk86NLC9+DVLxjAqvh4P4o3OF1zczJs5RJH1aHe42hhbHDLkkmSy90oHWVtitQeBNzxNke9j95FK/AmChlvBhMSlotJAJIWXAJ091ebPqM8U5OCS/MvS2ZhLDsQ5s2kub5u8utlOuugBPxFGt28SZBvCNoW3dIA/wDsunXzq5Swgu93cuFDByubJCtB1UeImdJ9NaltgbPPEuf3bY08/Em9LudZkXP6B2VHwUhsk6XGLD6ptWQum0lbYYnX6TE0W1hl5Io84AEDfXkNOfSrb5Phx/a4hvdaH8lPV7SKzKLrNsozI1wkeLwgpAPVj7IE6Vz5sGanObKSK18Eh0ChhlBzZVhtTIUE5jsTMa67bVCfg9oydR1AAjTeRRuI49boF1MsrqGzI6i6uULmvjScrOCSS0aAkGh8P4yLjHvbd2QVQktcC55jNnjWdPDm0A0AkxhFTUuf7/HyOXbYwcFX6LHX9n8iKC/BrnIA+8/hWkFyzEGwrDo1x2B+NHNqyFzNhrGSAzBFR3CaHNlaAw1B0ncaaiez6fIuZEOETInhL/SWP8a/iabZ4YzHKurbZUuKx+AP6it3asWhmurbtjDjXOlpQ5WBJ7vTYkgnLyOnKq/jHEVtOGtsly1lWQAIGuvly6cxPSlPHJJ07r4FoiY7FYHIWt3GykDxIzZfCSInNoyzl6iYoNvhCDVba8/ZVOYg+yOdbY8VYRlb2ScsD2QQRAnYQdhp8KY/F3O9xq6IdNKt2NxXhmR/oU7/ACc/5MnoNYmKQ8NC/wBiw9LDE/8ATNapuKN/eP8AxH86A+Mnck+pmr+m+ROPyUJ4ef7o/wCWfypPkLf3Z99skfdNXZxflTTiTTXSr2LR8lWuFf6jbfVgf6ooeJ4ezKVKwDHNOoO2Y9KtjiTTDiDTXTRKiqdo8741wt7bhFt5kaJuLbxBNvXXNEq2hnwztyoFvB91dEG5cXKwDLYvrlPhOoZJEjMvh11PIwfSTePWk749TW8YqJrPNOaqTPNb3DRcdnK4oZjJC4fc6Atma4vtEZtvpUl3gFzMvdYfEFfp94yKzbRlgHLz3mvSc56n4mmgSY3JIAHMk7ADmaoztmAu9m7zD5vDMh0hnvZgDIOoFsawGHv8qv8AhfD7qFmexZzNEt3jTA2WBAiZO3P0rVpaZSWynPh5uFCJJbQFfKcxU/Vyz1FQwRlXw5WnKwJgCQCsZtQI3JJ91Y/VQUtLHKNcsBZU87dsehn7waOVT6o/gFFxGDuISGQiCBOhWSJEMDBka0FLZJAGpJAA8yYFbar3JoUFRsB8B+VNLjpXcWU2Gs22ttN3diRCM2UC2VE8yRMjUNGaNA2rgYSDrJBX6Snz0jXlBO3KojkjLgpxaCF/KkNzyHwH5U9goAgyTvOmWDrl18WmX4kRMGnX8Pk0YoDrpnWdCR94PwpyyRjyxUabC2LN23mss+YEli4XIqiZbQSRI6TodNjUHifyhQMtoPaEE3EcJchwGHtEliFZdNAdoG9JXVyPeTv4B/aFwvfMciAGwqC5iLnhmEEkKh0WAAAQDqZruKMlh0LEEFklFDGFLCczGJmVBj63qa6up01vfgEQbePtd+Qzu9ktCtbUK3igrCsNBrBHlpR8cOID5uzhbSINczm29x42ZmzgA6bAabTSV1c+GcsqqT8mfJm+L38rOl22e8U5bigWnQupKgrOU5QMv0pHiHOolgulp3tuSAJKZQsDTmzNGuvhI1XkK6uqcatv4ZE9pUbzs5ZPcjvrZdw0gFgpkiAodSZ1DbkCY33o/FL13u1b528/j7q2rW1uorDw3Wu3PAzIIgEazrm1rq6uhL8X+DeqiVHAuKX8aj/PG4U8PfMMkgMSAuXxAwdZHXWn3MHFu7cNwHupzDxEnKAX1I5Ag+ddXULI4rbzYob1YY8CumCMhnUQx1+K0M8EvD6A/iFJXV2JltHHg18Cco/iFRHtMNxHwrq6ixUDKmmlTXV1MRxWkilrqBjzh/mxcPssSF1MmDBMchOlAaK6url6fNLJKSfj+Wv2G0Pw9yCe7RLlwK5CXElBpo58QzEeI5dPZGuuhbqIiliQCgAu27habLmCRntCLpy5jpAkgEtBnq6ulbyr8zGUmlY7hmHQpAuXMj3BatPbVQhcakMGZXjVgBlGxPMCm8awYZPm2csLdu+ywoS3bW0VnMTmZ8zjYRDGurq8zNTzONeC+YC2cW91VQIrsFbIzhT3csJQZtIbKBBBAOU6RU/Bw+W8jyiLny92iQSYlVQCIBXQsRI5A6dXVl3prE6f9ozg2mgPH7iI4Uyr3Q2ZhJGWVW4TJOcrnSAAkASOSjPYe4bLMrA5pK5g7KVIlWModT9m/WR1dWMc01jxyverNpeS3xSm2QLkg5C0EKyhFGYmQdpdjEc9ZnSFiOJ90FtwCVzaNcuLEnTW2IJ5eig7lqWurXJPVSZN0rP/2Q==" class="card-img-top" alt="American Oncology Institute">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Apollo Hospitals, Visakhapatnam</h5>
+                            <p class="card-text">Apollo Hospitals are renowned for their comprehensive gynecological
+                                services, including treatment for PCOS.</p>
+                            <a href="https://www.askapollo.com/physical-appointment/city/visakhapatnam"
+                                class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hospital-card">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCeltsJV9bD6fkWtx7691wqG5tcdDD41pAA&s"
+                            class="card-img-top" alt="Care Hospitals">
+                        <div class="card-body">
+                            <h5 class="card-title">Care Hospitals, Visakhapatnam</h5>
+                            <p class="card-text">They participate in the Arogyasri scheme, offering coverage for
+                                eligible patients.</p>
+                            <a href="https://appointment.carehospitals.com/" class="btn btn-primary">Book
+                                Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hospital-card">
+                    <div class="card">
+                        <img src="https://www.manipalhospitals.com/vijayawada/assets/images/about/About_US.webp"
+                            class="card-img-top" alt="Manipal Hospitals">
+                        <div class="card-body">
+                            <h5 class="card-title">Manipal Hospital, Vijayawada</h5>
+                            <p class="card-text">Manipal Hospital is known for its multidisciplinary approach to
+                                treating PCOS, integrating various specialties.</p>
+                            <a href="https://campaign.lifesonmanipal.com/campaign/lifes-on/online_video_consultation/?utm_source=google&utm_medium=ppc&utm_network=search&utm_campaign=New_Rest_of_Karnataka&utm_adgroup=Video_Consultation&utm_ad=&keyword=book%20online%20appointment%20for%20doctor&device=c&gad_source=1&gclid=CjwKCAjw7NmzBhBLEiwAxrHQ-ZGNX3oWktnXnAdmdLw2h7FW2SyH6q7ELi2slxV3uhNQdO7eRrHwVRoCtVEQAvD_BwE"
+                                class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer section gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mr-auto col-sm-6">
+                        <div class="widget mb-5 mb-lg-0">
+                            <div class="logo mb-4">
+                                <img src="C:\Users\mouni\Downloads\logo.ico" alt="" class="img-fluid">
+                            </div>
+                            <p>Receive personalized guidance from top doctors based on your specific health concerns.
+                            </p>
+                            </p>
+
+                            <ul class="list-inline footer-socials mt-4">
+                                <li class="list-inline-item">
+                                    <a href=""><i class="icofont-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href=""><i class="icofont-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href=""><i class="icofont-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="widget mb-5 mb-lg-0">
+                            <h4 class="text-capitalize mb-3">Considerations</h4>
+                            <div class="divider mb-4"></div>
+
+                            <ul class="list-unstyled footer-menu lh-35">
+                                <li><a class="dropdown-item" href="/breast">Breast Cancer</a></li>
+                                <li><a class="dropdown-item" href="/pcos">PCOS</a></li>
+                                <li><a class="dropdown-item" href="/Menstrual"> Menstrual Cycle </a></li>
+                                <li><a class="dropdown-item" href="/Thyroid">Thyroid </a></li>
+                                <li><a class="dropdown-item" href="/heart">Heart Disease</a></li>
+                                <li><a class="dropdown-item" href="/bp">Blood Pressure </a></li>
+                                <li><a class="dropdown-item" href="/diabetes">Diabetes</a></li>
+                                <li><a class="dropdown-item" href="/Cystitis">Cystitis </a></li>
+                                <li><a class="dropdown-item" href="/HPV">HPV </a></li>
+                                <li><a class="dropdown-item" href="/Osteoporosis">Osteoporosis </a></li>
+                                <li><a class="dropdown-item" href="Maternal.html">Maternal </a></li>
+                                <li><a class="dropdown-item" href="/Mental">Mental Stability </a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="widget mb-5 mb-lg-0">
+                            <h4 class="text-capitalize mb-3">Support</h4>
+                            <div class="divider mb-4"></div>
+
+                            <ul class="list-unstyled footer-menu lh-35">
+                                <li><a href="#!">Terms & Conditions</a></li>
+                                <li><a href="#!">Privacy Policy</a></li>
+                                <li><a href="#!">Company Support </a></li>
+                                <li><a href="#!">FAQuestions</a></li>
+                                <li><a href="#!">Company Licence</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget widget-contact mb-5 mb-lg-0">
+                            <h4 class="text-capitalize mb-3">Get in Touch</h4>
+                            <div class="divider mb-4"></div>
+
+                            <div class="footer-contact-block mb-4">
+                                <div class="icon d-flex align-items-center">
+                                    <i class="icofont-email mr-3"></i>
+                                    <span class="h6 mb-0">Support Available for 24/7</span>
+                                </div>
+                                <h4 class="mt-2"><a href="mailto:support@email.com">Support@email.com</a></h4>
+                            </div>
+
+                            <div class="footer-contact-block">
+                                <div class="icon d-flex align-items-center">
+                                    <i class="icofont-support mr-3"></i>
+                                    <span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+                                </div>
+                                <h4 class="mt-2"><a href="tel:+23-345-67890">6302073733</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-btm py-4 mt-5">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="copyright">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="subscribe-form text-lg-right mt-5 mt-lg-0">
+                                <form action="#" class="subscribe">
+                                    <input type="text" class="form-control" placeholder="Your Email address" required>
+                                    <button type="submit" class="btn btn-main-2 btn-round-full">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a class="backtop scroll-top-to" href="#top">
+                                <i class="icofont-long-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- 
+Essential Scripts
+=====================================-->
+        <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/shuffle.min.js') }}"></script>
+
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA"></script>
+        <script src="{{ url_for('static', filename='js/gmap.js') }}"></script>
+
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+    </body>
+
+</html>
